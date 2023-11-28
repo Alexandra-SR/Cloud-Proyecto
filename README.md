@@ -37,7 +37,7 @@ Esta aplicación se basa en Inteligencia Artificial y está diseñada para anali
 - Workers
 - Workers
 - Kubernetes Cluster
-- Azure Blob Storage
+- Cloud Storage
 
 #### Arquitectura Aplicación Web
 - Frontend
@@ -47,23 +47,23 @@ Esta aplicación se basa en Inteligencia Artificial y está diseñada para anali
 ## 3. Ejecución de la Aplicación
 
 - Preparación del entorno:
-  - Azure Kubernetes Service
-  - Azure Blob Storage
+  - Google Kubernetes Engine
+  - Google Cloud Storage
 - Contenerización de la aplicación PySpark.
-- Acceso a Azure Blob Storage para leer datos y guardar el modelo.
-- Despliegue en AKS (Azure Kubernetes Service).
-- Entrenamiento: Procesamiento de datos en AKS para entrenar el modelo SVM y guardarlo en Blob Storage.
+- Acceso a Google Cloud Storage para leer datos y guardar el modelo.
+- Despliegue en GKE (Google Kubernetes Engine).
+- Entrenamiento: Procesamiento de datos en GKE para entrenar el modelo SVM y guardarlo en Google Cloud Storage.
 - Backend (Serverless):
-  - Creación de una función en Azure Functions para cargar el modelo entrenado desde Blob Storage y realizar predicciones.
+  - Creación de una función en Google Cloud Functions para cargar el modelo entrenado desde Google Cloud Storage y realizar predicciones.
   - Esta función actúa como una API que el frontend puede llamar para obtener predicciones.
 - Frontend: Interfaz web donde los usuarios pueden ingresar reseñas.
-  - Conexión de la interfaz con el backend para que cuando un usuario ingrese una reseña, se haga una llamada a la función Azure y se muestre el resultado de la clasificación.
+  - Conexión de la interfaz con el backend para que cuando un usuario ingrese una reseña, se haga una llamada a la función Cloud de Google y se muestre el resultado de la clasificación.
 
 ## 4. Tecnologías de Cloud Computing
 
-- Azure Web App for Containers
-- Azure Machine Learning
-- Azure Functions
-- Azure Kubernetes Service (AKS)
-- Azure Blob Storage
+- Google Cloud Run
+- Google Container Registry
+- Google Cloud Functions
+- Google Kubernetes Engine (GKE)
+- Google Cloud Storage
 
