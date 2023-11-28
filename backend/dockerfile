@@ -1,0 +1,15 @@
+FROM ubuntu
+FROM bitnami/spark:latest
+
+WORKDIR /app
+
+USER root
+RUN apt-get update && apt-get install -y python3-pip
+
+COPY requirements.txt ./
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+# Comando para ejecutar tu aplicación
+CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]

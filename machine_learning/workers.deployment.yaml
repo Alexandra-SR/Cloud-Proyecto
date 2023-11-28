@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spark-workers
+spec:
+  replicas: 1  # Adjust the number of replicas as needed
+  selector:
+    matchLabels:
+      app: spark
+  template:
+    metadata:
+      labels:
+        app: spark
+    spec:
+      containers:
+      - name: spark-worker-1
+        image: bitnami/spark:latest
+        command: ["/bin/bash", "-c", "bin/spark-class org.apache.spark.deploy.worker.Worker spark://34.118.226.175:7077"]
+        env:
+        - name: SPARK_MODE
+          value: "worker"
+        - name: SPARK_WORKER_CORES
+          value: "2"
+        - name: SPARK_WORKER_MEMORY
+          value: "2g"
+        - name: SPARK_MASTER_URL
+          value: "spark://34.118.226.175:7077"
+
+      - name: spark-worker-2
+        image: bitnami/spark:latest
+        command: ["/bin/bash", "-c", "bin/spark-class org.apache.spark.deploy.worker.Worker spark://34.118.226.175:7077"]
+        env:
+        - name: SPARK_MODE
+          value: "worker"
+        - name: SPARK_WORKER_CORES
+          value: "2"
+        - name: SPARK_WORKER_MEMORY
+          value: "2g"
+        - name: SPARK_MASTER_URL
+          value: "spark://34.118.226.175:7077"
+
+      restartPolicy: Always

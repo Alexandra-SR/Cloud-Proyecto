@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spark-master
+spec:
+  replicas: 1  # Adjust the number of replicas as needed
+  selector:
+    matchLabels:
+      app: spark-master
+  template:
+    metadata:
+      labels:
+        app: spark-master
+    spec:
+      containers:
+      - name: spark-master
+        image: us-central1-docker.pkg.dev/reliable-sight-406213/ml-pyspark/cloud-image:v3
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 7077
+          - containerPort: 8080
+        command: ["/bin/bash", "-c", "bin/spark-class org.apache.spark.deploy.master.Master"]
+      restartPolicy: Always

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Review Sentiment Analyzer</h2>
+        <textarea id="reviewText" placeholder="Enter your review here..."></textarea>
+        <button onclick="analyzeReview()">Analyze Review</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function analyzeReview() {
+            var reviewText = document.getElementById('reviewText').value;
+            var resultText = 'Processing...'; // Placeholder for result
+            document.getElementById('result').innerText = resultText;
+
+            // Here, you would typically make an API call to your server for processing the review
+            // For demonstration, we'll just randomly choose positive or negative
+            setTimeout(function() {
+                var isPositive = Math.random() > 0.5; // Randomly choosing positive or negative
+                resultText = isPositive ? 'Positive Review' : 'Negative Review';
+                document.getElementById('result').innerText = resultText;
+            }, 2000); // Mock asynchronous behavior
+        }
+    </script>
+</body>
+</html>
