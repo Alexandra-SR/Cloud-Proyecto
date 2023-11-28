@@ -1,13 +1,13 @@
 {
   "type": "service_account",
   "project_id": "reliable-sight-406213",
-  "private_key_id": "6a286441bd205334aed01e548b9e31079af11e6b",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDdFYtEa9VANGQ3\nXT2P3AECe9knLyfPQYKjNd2tqqlbbm+77cqZ/sSvaD8KEzsAN3v9WtS2BqoRxCuv\nbuaZNbEMYa32LDn8DzU1Twt/F14Dnt3H0yMd7cujfnPhjyWbrCFS29TeOfvrstBy\nSlpyqETf09B5MUL1OtSGlxx6FOKyOo+PIUxfu89npUAyvhWZN6o31Fyeas5yXb7I\n2Ls44VoeHFqmy+LrGSDfbKKoim6bSXA9ZvrNOJxbS4A4SMguZQkz+3l4dSy/5fJU\njjLgIZ1eWS91A5egvoNrGlmSQZqhW514GSg+q2ww80nw0TMcV46IBPHv8K+5kx/g\nGZP9UA/3AgMBAAECggEAYz6WF39eqeU67Z2GEqu8qkxFVXE2KjQqvDBklF6titU/\nBDpBPjLfQSyHS/MJA9Zkav2YyiOgubv5rlWW38T59uhsars8xllfVdBnhURMmEx7\nG4Y81+UVCo4r39/eDo1NIkB7xMx7ubk6GGwnQRwnWuDfT2AdQi+IEukHyAfTIhUR\nG5D0mCdnnJQiC35dT7mnE6lEmKdsP8a2z7ycvQqJo9/vBK3NDBjKQPKWDALGeVZS\niKY3FoiQSrUyYub/+F5HgD6Bt8fOYv4QzTqIcNaqTqFzSpSmz9tthY0MQhCBJaxm\nfM9/2tF/ldRFS4qwWX7QeEkQ7+e+MukG+64IF9YnQQKBgQDxDJqof/6pRAKRJjk+\nXGMYgccs8Es9AsiqctvMWX6bvg3LZKZUpUZhZiCsqIdZ/w4iicQLcJSqCFzoRv56\nXe9LYoZMLOCcnMqQckjbbINDO3UPApBuOPp9KlwdwRDvk1jJYpVYIFczHlPj7JsT\nYEkDhc6VB/BFcUu10HEX/MHONwKBgQDqy+7a0wevfvC+6lXEJk5obW/kUdZPKo+J\nIpH9QVRsZI8yq9OCe5np/QHZN+IG9e5AQOKEL2GprgEUWZyY3z8OhIV/UKhWEoa5\nX2clcshDOxadYJTVfYSV7VLTZCsedsd8WOI3ZXVDoSG/wkLj6/nH8QayhcwA/GcF\nFJH0CgDsQQKBgBQRSI7emQTedJhA5mMareVMaJiFKL5bjPkjtsi8ap3spJlaN760\nQ7e4GOBG533GjhayAXAyXy4IpDNyNZ1aVKGiAiw1UD25j+OWoBokXokqWgR14jBK\n7g+dhy2y9QX87ldVrbk4eAn5bGJ9QCvMyEdSzG/7yTT+yZ7JS6EDmd7hAoGAVHqj\nqiAbt80Ymdh+m2Cc/X3CsIexcDKECndhx5ll4sobq8OfCmembUYXECzHKnH6EyxF\nVAIoRYDR6pyDd417hqGv1qsSpkVsK+5jklnGLEpqTJ2fb2EF/1uwXVbBHOjnxZnF\nauEaXAbxuakPoCobaRETs8/oIsKt3moUSZX/1wECgYBeg9PAzXk5OBpt1+00z8aP\negJ+9JRf7Ur/wjY948qantqhCoUiNfOw148L+gM+8jJsyVQYTmf4xP23d29nDse8\nu5w3CD0Nsle+pqWuKaZFbajpVMm3HKREgeJc6RsEq7WbmYr5wc6v5+37dYY7bDYo\nlJjGcnBJV97fK4ganUjIGQ==\n-----END PRIVATE KEY-----\n",
-  "client_email": "525542570113-compute@developer.gserviceaccount.com",
-  "client_id": "115476082740872670327",
+  "private_key_id": "xxx",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nxxx-----\n",
+  "client_email": "xxx@developer.gserviceaccount.com",
+  "client_id": "xxx",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/525542570113-compute%40developer.gserviceaccount.com",
+  "client_x509_cert_url": "xxx",
   "universe_domain": "googleapis.com"
 }
