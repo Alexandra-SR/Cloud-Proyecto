@@ -59,11 +59,16 @@
             var resultText = 'Processing...'; // Placeholder for result
             document.getElementById('result').innerText = resultText;
 
-            // Here, you would typically make an API call to your server for processing the review
-            // For demonstration, we'll just randomly choose positive or negative
             setTimeout(function() {
-                var isPositive = Math.random() > 0.5; // Randomly choosing positive or negative
-                resultText = isPositive ? 'Positive Review' : 'Negative Review';
+             try {
+                const respuesta = await fetch('https://southamerica-west1-reliable-sight-406213.cloudfunctions.net/MLBackend', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({ texto }),
+                })
+                resultText = respuesta['calificacion']
                 document.getElementById('result').innerText = resultText;
             }, 2000); // Mock asynchronous behavior
         }
